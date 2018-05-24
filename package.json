@@ -1,6 +1,6 @@
 {
   "name": "indian-astrology",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node module to get the Indian astrological details from the provided birth details as a JSON object. You will also get a prediction based on the calculated details.",
   "main": "src/index.js",
   "scripts": {
