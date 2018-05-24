@@ -1,6 +1,6 @@
 # indian-astrology
 
-> Get the Indian atrological details from the provided birth details as a JSON object. You will also get a prediction based on the calculated details.
+> Get the Indian astrological details from the provided birth details as a JSON object. You will also get a prediction based on the calculated details.
 
 ## Installation
 
