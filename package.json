@@ -1,0 +1,92 @@
+{
+  "name": "indian-astrology",
+  "version": "1.0.0",
+  "description": "This is a module to provide the Indian astrology based results by user provided data.",
+  "main": "src/index.js",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build":"npm-run-all --parallel build:*",
+    "build:main": "babel --copy-files --out-dir dist --ignore *.test.js src",
+    "build:umd": "webpack --output-filename index.umd.js",
+    "build:umd.min": "webpack --output-filename index.umd.min.js -p",
+    "test": "cross-env NODE_ENV=test nyc mocha",
+    "watch:test": "mocha --watch",
+    "lint": "eslint src",
+    "validate": "npm-run-all --parallel lint test build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narendra-Kamath/indian-astrology.git"
+  },
+  "keywords": [
+    "indian",
+    "astrology",
+    "indian-astrology",
+    "rashi",
+    "nakshatra"
+  ],
+  "author": "Narendra Kamath G <narendrakamathg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Narendra-Kamath/indian-astrology/issues"
+  },
+  "homepage": "https://github.com/Narendra-Kamath/indian-astrology#readme",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-loader": "6.2.4",
+    "babel-plugin-istanbul": "4.1.6",
+    "babel-preset-es2015": "6.24.1",
+    "chai": "4.1.2",
+    "cross-env": "5.1.6",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.12.0",
+    "ghooks": "2.0.4",
+    "json-loader": "0.5.4",
+    "mocha": "5.2.0",
+    "npm-run-all": "4.1.3",
+    "nyc": "11.8.0",
+    "rimraf": "2.6.2",
+    "webpack": "1.13.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "nyc": {
+    "all": true,
+    "check-coverage": true,
+    "branches": 80,
+    "functions": 100,
+    "lines": 85,
+    "statements": 85,
+    "instrument": false,
+    "sourceMap": false,
+    "require": [
+      "babel-register"
+    ],
+    "reporter": [
+      "text",
+      "lcov"
+    ],
+    "include": [
+      "src"
+    ]
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run validate"
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
+  }
+}
