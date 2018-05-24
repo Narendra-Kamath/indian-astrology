@@ -1,5 +1,7 @@
 # indian-astrology
 
+[![NPM version][npm-image]][npm-link] [![License][lic-image]][npm-link] [![Build status][travis-image]][travis-link] [![Coverage Status][coverage-image]][coverage-link] [![downloads][dt-image]][npm-link]
+
 > Get the Indian astrological details from the provided birth details as a JSON object. You will also get a prediction based on the calculated details.
 
 ## Installation
@@ -128,3 +130,11 @@ console.log(IndianAstrology.getTodaysDetails(false));
 
 ## License
 MIT license. Copyright © 2018.
+
+[lic-image]: https://img.shields.io/npm/l/indian-astrology.svg
+[npm-link]: https://npmjs.org/package/indian-astrology
+[travis-image]: https://img.shields.io/travis/Narendra-Kamath/indian-astrology.svg
+[travis-link]: https://travis-ci.org/Narendra-Kamath/indian-astrology
+[dt-image]: https://img.shields.io/npm/dt/indian-astrology.svg
+[coverage-image]: https://img.shields.io/codecov/c/github/Narendra-Kamath/indian-astrology.svg
+[coverage-link]: https://codecov.io/gh/Narendra-Kamath/indian-astrology

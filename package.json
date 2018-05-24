@@ -1,7 +1,7 @@
 {
   "name": "indian-astrology",
   "version": "1.0.0",
-  "description": "This is a module to provide the Indian astrology based results by user provided data.",
+  "description": "A node module to get the Indian astrological details from the provided birth details as a JSON object. You will also get a prediction based on the calculated details.",
   "main": "src/index.js",
   "scripts": {
     "prebuild": "rimraf dist",
