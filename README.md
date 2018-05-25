@@ -22,6 +22,24 @@ console.log(IndianAstrology.getOnlyCountryNameList());
 console.log(IndianAstrology.getTodaysDetails(false));
 ```
 
+### Sample JSON Response
+Note: The zodiac sign here is the Indian rashi equivalent sign. The prediction is based on the rashi alone as of now.
+```json
+{
+  "rashi": "Kanya",
+  "zodiacSign": "Virgo",
+  "moonAngle": "22°49'37\"",
+  "nakshatra": "Hasta",
+  "birthDasha": "Mon/Sun/Rah",
+  "birthDate": "25-5-2018",
+  "birthTime": "19:5",
+  "dayOfWeek": "Friday",
+  "birthTimeZone": 5.5,
+  "currentDasha": "Mon/Sun/Rah",
+  "prediction": "This is a sample prediction based on zodiac sign."
+}
+```
+
 ## API
 
 ### getByDate(day, month, year, hour, minute, timeZoneHour, timeZoneMinute, dayLightSaving)
@@ -135,6 +153,6 @@ MIT license. Copyright © 2018.
 [npm-link]: https://npmjs.org/package/indian-astrology
 [travis-image]: https://img.shields.io/travis/Narendra-Kamath/indian-astrology.svg
 [travis-link]: https://travis-ci.org/Narendra-Kamath/indian-astrology
-[dt-image]: https://img.shields.io/github/downloads/Narendra-Kamath/indian-astrology/total.svg
+[dt-image]: https://img.shields.io/npm/dt/indian-astrology.svg
 [coverage-image]: https://img.shields.io/codecov/c/github/Narendra-Kamath/indian-astrology.svg
 [coverage-link]: https://codecov.io/gh/Narendra-Kamath/indian-astrology
