@@ -47,7 +47,7 @@ class AstroCore {
                 if (f.birthMonth < 1 || f.birthMonth > 12) {
                     throw new Error('Month should be between 1 and 12');
                 }
-                if (f.birthYear < 1800 || f.birthMonth > 2100) {
+                if (f.birthYear < 1800 || f.birthYear > 2100) {
                     throw new Error('Year should be between 1800 and 2100');
                 }
                 if (f.birthMonth === 1 || f.birthMonth === 3 || f.birthMonth === 5 || f.birthMonth === 7 || f.birthMonth === 8 || f.birthMonth === 10 || f.birthMonth === 12) {
